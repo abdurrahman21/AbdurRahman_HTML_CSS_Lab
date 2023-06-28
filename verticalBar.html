@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        .bg {
+            background-color: rgb(163, 158, 158);
+            min-width: 300px;
+            max-width: 300px;
+            min-height: 500px;
+            max-height: 500px;
+            margin: auto;
+        }
+
+        .bar-container {
+            display: flex;
+            margin-top: 80px;
+            padding: 50px 25px 20px 25px;
+        }
+
+        .bar {
+            border: 1px solid white;
+            width: 50px;
+            height: 350px;
+            background-color: rgb(163, 158, 158);
+            margin: auto;
+        }
+
+        .bar-inner1 {
+            background-color: white;
+            height: 70%;
+        }
+
+        .bar-30 {
+            animation: load-30 3s;
+        }
+
+        @keyframes load-30 {
+            0% {
+                height: 100%;
+            }
+
+            100% {
+                height: 70%;
+            }
+        }
+
+        .bar-inner2 {
+            background-color: white;
+            height: 60%;
+        }
+
+        .bar-40 {
+            animation: load-40 3s;
+        }
+
+        @keyframes load-40 {
+            0% {
+                height: 100%;
+            }
+
+            100% {
+                height: 60%;
+            }
+        }
+
+        .bar-inner3 {
+            background-color: white;
+            height: 20%;
+        }
+
+        .bar-80 {
+            animation: load-80 3s;
+        }
+
+        @keyframes load-80 {
+            from {
+                height: 100%;
+            }
+
+            to {
+                height: 20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="bar-container">
+            <div class="bar">
+                <div class="bar-inner1 bar-30"></div>
+            </div>
+            <div class="bar">
+                <div class="bar-inner2 bar-40"></div>
+            </div>
+            <div class="bar">
+                <div class="bar-inner3 bar-80"></div>
+            </div>
+        </div>
+        <div style="text-align: center; ">30%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%</div>
+        &nbsp;
+        <div style="text-align: center;">Bar Chart</div>
+    </div>
+</body>
+
+</html>
